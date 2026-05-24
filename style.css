@@ -385,57 +385,153 @@
   font-family: ''Plus Jakarta Sans', sans-serif', sans-serif;
 }
 
-         /* Projects Section */
-        .project-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        }
-        
-        .project-img {
-            height: 220px;
-            overflow: hidden;
-        }
-        
-        .project-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .project-card:hover .project-img img {
-            transform: scale(1.05);
-        }
-        
-        .project-content {
-            padding: 25px;
-        }
-        
-        .project-content h3 {
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-        
-        .project-content .badge {
-            background: var(--secondary);
-            margin-right: 8px;
-            margin-bottom: 10px;
-        }
-        
-        .project-links {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-        }
+/* ===== PROJECTS ===== */
+.project-card {
+  background: #0d0d14;
+  border: 0.5px solid #2a2a3a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+  height: 100%;
+}
+
+.project-card:hover {
+  border-color: #a855f7;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(168,85,247,0.12);
+}
+
+.project-img {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(0.85);
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(168,85,247,0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.overlay-btn {
+  background: #a855f7;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background 0.2s;
+}
+
+.overlay-btn:hover { background: #9333ea; color: #fff; }
+
+.project-content {
+  padding: 22px;
+}
+
+.project-content h3 {
+  color: #f1f0ff;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-content p {
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.project-status {
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.status-done {
+  background: rgba(34,211,165,0.1);
+  color: #22d3a5;
+  border: 1px solid #22d3a5;
+}
+
+.status-progress {
+  background: rgba(251,191,36,0.1);
+  color: #fbbf24;
+  border: 1px solid #fbbf24;
+}
+
+.project-content .badge {
+  background: rgba(168,85,247,0.1);
+  color: #a855f7;
+  border: 1px solid rgba(168,85,247,0.3);
+  font-size: 10px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn-demo {
+  font-size: 11px;
+  padding: 7px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #22d3a5;
+  color: #22d3a5;
+  transition: all 0.2s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.btn-demo:hover {
+  background: rgba(34,211,165,0.1);
+  color: #22d3a5;
+}
+
+.btn-source {
+  font-size: 11px;
+  padding: 7px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #a855f7;
+  color: #fff;
+  transition: all 0.2s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.btn-source:hover { background: #9333ea; color: #fff; }
         
         /* Contact Section */
         .contact-content {
