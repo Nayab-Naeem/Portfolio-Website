@@ -87,3 +87,21 @@ window.addEventListener('load', () => {
     }, 28);
   });
 });
+// Skill bars animation
+const bars = ['b1','b2','b3','b4','b5','b6','b7','b8','b9','b10','b11','b12'];
+bars.forEach((id, i) => {
+  setTimeout(() => {
+    const bar = document.getElementById(id);
+    const pct = document.getElementById('p' + (i + 1));
+    if (!bar || !pct) return;
+    const target = parseInt(bar.dataset.target);
+    bar.style.width = target + '%';
+    let cur = 0;
+    const step = target / 60;
+    const iv = setInterval(() => {
+      cur = Math.min(cur + step, target);
+      pct.textContent = Math.round(cur) + '%';
+      if (cur >= target) clearInterval(iv);
+    }, 18);
+  }, i * 100);
+});
