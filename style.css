@@ -3,26 +3,30 @@
 }
 
 :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --light: #ecf0f1;
-            --dark: #1a252f;
-            --success: #2ecc71;
-        }
-        
+  --primary: #a855f7;
+  --secondary: #22d3a5;
+  --accent: #60a5fa;
+  --light: #1a1a2e;
+  --dark: #0a0a0f;
+  --success: #22d3a5;
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0d0d14;
+  --border-color: #1a1a2e;
+  --text-primary: #f1f0ff;
+  --text-muted: #6b7280;
+}
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: #333;
-            background-color: #f8f9fa;
-            line-height: 1.6;
-        }
+   body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #f1f0ff;
+  background-color: #0a0a0f;
+  line-height: 1.6;
+}    
         
         h1, h2, h3, h4 {
             font-family: 'Raleway', sans-serif;
@@ -533,45 +537,113 @@
 
 .btn-source:hover { background: #9333ea; color: #fff; }
         
-        /* Contact Section */
-        .contact-content {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            padding: 40px;
-        }
-        
-        .contact-info-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px;
-        }
-        
-        .contact-info-icon {
-            width: 60px;
-            height: 60px;
-            background: rgba(52, 152, 219, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            color: var(--secondary);
-            font-size: 1.5rem;
-        }
-        
-        .contact-form .form-control {
-            padding: 15px;
-            border: 1px solid #e9ecef;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .contact-form .form-control:focus {
-            border-color: var(--secondary);
-            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
-        }
+   /* ===== CONTACT ===== */
+.contact-content {
+  background: #0d0d14;
+  border: 0.5px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 40px;
+  height: 100%;
+}
+
+.contact-content h3 {
+  color: #f1f0ff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-intro {
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.contact-info-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(168,85,247,0.1);
+  border: 1px solid rgba(168,85,247,0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  color: #a855f7;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.contact-info-item:hover .contact-info-icon {
+  background: rgba(168,85,247,0.2);
+  border-color: #a855f7;
+}
+
+.contact-info-item h4 {
+  color: #f1f0ff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.contact-info-item p {
+  color: #6b7280;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ===== FORM ===== */
+.contact-form .form-control {
+  background: #0a0a0f;
+  border: 1px solid #2a2a3a;
+  border-radius: 8px;
+  color: #f1f0ff;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.contact-form .form-control::placeholder {
+  color: #4b5563;
+}
+
+.contact-form .form-control:focus {
+  background: #0a0a0f;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168,85,247,0.1);
+  color: #f1f0ff;
+  outline: none;
+}
+
+.btn-send {
+  width: 100%;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.btn-send:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
         
         /* Footer */
         .footer {

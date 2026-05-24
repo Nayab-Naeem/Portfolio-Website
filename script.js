@@ -105,3 +105,31 @@ bars.forEach((id, i) => {
     }, 18);
   }, i * 100);
 });
+
+// Contact form submission
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = form.querySelector('.btn-send');
+  btn.textContent = 'Sending...';
+  
+  const formData = new FormData(form);
+  
+  try {
+    const response = await fetch('https://formspree.io/f/mgoqlobd', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+    
+    if (response.ok) {
+      btn.textContent = 'Message Sent!';
+      btn.style.background = 'linear-gradient(90deg, #059669, #22d3a5)';
+      form.reset();
+    } else {
+      btn.textContent = 'Error. Try again.';
+    }
+  } catch (error) {
+    btn.textContent = 'Error. Try again.';
+  }
+});
