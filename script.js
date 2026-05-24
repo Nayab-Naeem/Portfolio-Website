@@ -67,3 +67,23 @@
                 }
             });
         });
+        // Hero fade-in on load
+window.addEventListener('load', () => {
+  document.querySelectorAll('.hero-animate').forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.add('visible');
+    }, 100 + i * 150);
+  });
+
+  // Stat counters
+  [{id:'s1',val:6},{id:'s2',val:30},{id:'s3',val:180}].forEach(({id, val}) => {
+    let cur = 0;
+    const step = val / 50;
+    const el = document.getElementById(id);
+    const iv = setInterval(() => {
+      cur = Math.min(cur + step, val);
+      el.textContent = Math.round(cur) + (id === 's3' ? '+' : '');
+      if (cur >= val) clearInterval(iv);
+    }, 28);
+  });
+});
