@@ -645,50 +645,74 @@
   transform: translateY(-2px);
 }
         
-        /* Footer */
-        .footer {
-            background: var(--dark);
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer h4 {
-            margin-bottom: 25px;
-            position: relative;
-        }
-        
-        .footer h4::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--secondary);
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links a {
-            color: rgba(255,255,255,0.7);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--secondary);
-            padding-left: 5px;
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            margin-top: 40px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.5);
-        }
+   /* ===== FOOTER ===== */
+.footer {
+  background: #0d0d14;
+  border-top: 1px solid #1a1a2e;
+  padding: 70px 0 0;
+}
+
+.footer-brand {
+  color: #f1f0ff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.footer-brand span {
+  color: #a855f7;
+}
+
+.footer-desc {
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer-heading {
+  color: #f1f0ff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  color: #4b5563;
+  font-size: 13px;
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+
+.footer-links li i {
+  color: #a855f7;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #22d3a5;
+  padding-left: 4px;
+}
+
+.copyright {
+  border-top: 1px solid #1a1a2e;
+  padding: 24px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-made {
+  color: #4b5563;
+  font-size: 12px;
+}
 
          /* Responsive */
         @media (max-width: 991px) {
