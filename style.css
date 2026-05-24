@@ -292,6 +292,12 @@
 }
 
 /* ===== SECTION TITLES ===== */
+.section-title {
+  margin-bottom: 60px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 .section-title h2 {
   font-size: 2rem;
   color: #f1f0ff;
@@ -318,6 +324,41 @@
   background: #0a0a0f;
   padding: 100px 0;
 }
+/* ===== EDUCATION part of about section ===== */
+.edu-detail {
+  color: #6b7280;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.cgpa {
+  color: #22d3a5;
+  font-weight: 600;
+}
+
+.edu-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.edu-subjects span {
+  background: rgba(168,85,247,0.1);
+  border: 1px solid rgba(168,85,247,0.3);
+  color: #a855f7;
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.highlight-text {
+  color:  #22d3a5;
+  font-weight: 500;
+}
+
 /* ===== SKILLS ===== */
 .skills-content {
   background: #0d0d14;
@@ -644,7 +685,16 @@
   opacity: 0.9;
   transform: translateY(-2px);
 }
-        
+.contact-info-item a {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.contact-info-item a:hover {
+  color: #22d3a5;
+}
    /* ===== FOOTER ===== */
 .footer {
   background: #0d0d14;
