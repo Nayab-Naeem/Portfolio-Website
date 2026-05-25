@@ -22,7 +22,7 @@ A modern, responsive personal portfolio website built with **HTML, CSS, JavaScri
 
 ## 🔗 Live Demo
 
-[View Portfolio](https://nayab-naeem.netlify.app) 
+[View Portfolio](https://nayabnaeem.netlify.app) 
 
 ## 📬 Contact
 
