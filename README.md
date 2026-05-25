@@ -1,25 +1,36 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Nayab Naeem — Portfolio Website
 
-A modern, responsive, and professional **portfolio website** built with **HTML, CSS, JavaScript, and Bootstrap**.  
-This project showcases my **skills, projects, education, and contact information** in a clean and interactive way.  
+A modern, responsive personal portfolio website built with **HTML, CSS, JavaScript, and Bootstrap**.
 
-## 🚀 Features
-- Responsive design for **desktop, tablet, and mobile**
-- **Dark Mode** toggle
-- **Typing animation** in hero sections
-- **Scroll reveal animations** for smooth interactivity
-- Organized sections:
-  - 🏠 Home
-  - 🛠️ Skills
-  - 📂 Projects
-  - 🎓 Education
-  - 📞 Contact
+## ✨ Features
+
+- Dark techy theme with purple & green accents
+- Typing animation cycling through roles
+- Animated skill bars with percentage counters
+- Stats counter — projects, LeetCode, days of coding
+- Working contact form via Formspree
+- Scroll reveal animations
+- Fully responsive — mobile, tablet, desktop
+- Sections: Home, About, Skills, Projects, Contact
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap  
-- **Tools:** VS Code, Git, GitHub 
+
+- HTML5, CSS3, JavaScript
+- Bootstrap 5
+- Plus Jakarta Sans (Google Fonts)
+- Formspree (contact form)
+
+## 🔗 Live Demo
+
+[View Portfolio](https://nayab-naeem.netlify.app) 
+
+## 📬 Contact
+
+- Email: nayabnaeem.tech@gmail.com
+- LinkedIn: [linkedin.com/in/nayabnaeemcs](https://www.linkedin.com/in/nayabnaeemcs)
+- GitHub: [github.com/Nayab-Naeem](https://github.com/Nayab-Naeem)
+
 
 ## 📄 License
 
-This project is licensed under the MIT License – see the LICENSE
- file for details.
+This project is licensed under the [MIT License](LICENSE) 
