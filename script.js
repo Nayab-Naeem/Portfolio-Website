@@ -67,26 +67,29 @@
                 }
             });
         });
-        // Hero fade-in on load
-window.addEventListener('load', () => {
+       // Hero fade-in — runs as soon as DOM is ready, doesn't wait for images
+document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.hero-animate').forEach((el, i) => {
     setTimeout(() => {
       el.classList.add('visible');
     }, 100 + i * 150);
   });
+});
 
-  // Stat counters
-  [{id:'s1',val:6},{id:'s2',val:50},{id:'s3',val:400}].forEach(({id, val}) => {
+// Stat counters — runs after full page load (images etc.)
+window.addEventListener('load', () => {
+  [{id:'s1', val:6}, {id:'s2', val:50}, {id:'s3', val:400}].forEach(({id, val}) => {
     let cur = 0;
     const step = val / 50;
     const el = document.getElementById(id);
     const iv = setInterval(() => {
       cur = Math.min(cur + step, val);
-     el.textContent = Math.round(cur) + '+';
+      el.textContent = Math.round(cur) + '+';
       if (cur >= val) clearInterval(iv);
     }, 28);
   });
 });
+
 // Skill bars animation
 const bars = ['b1','b2','b3','b4','b5','b6','b7','b8','b9','b10','b11','b12'];
 bars.forEach((id, i) => {
