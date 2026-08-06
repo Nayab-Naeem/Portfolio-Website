@@ -801,3 +801,36 @@
                 font-size: 2rem;
             }
         }
+
+        /* Hero Lottie Animation */
+.hero-lottie-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 480px;
+  width: 100%;
+}
+
+.hero-lottie-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle at center, rgba(168, 85, 247, 0.15), transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* Optional: make it slightly float */
+.hero-lottie-wrapper {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
