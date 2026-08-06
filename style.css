@@ -802,7 +802,7 @@
             }
         }
 
-        /* Hero Lottie Animation */
+ /* Hero Lottie Animation */
 .hero-lottie-wrapper {
   position: relative;
   display: inline-block;
@@ -833,4 +833,47 @@
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
+}
+
+/* About Lottie - Top centered version */
+.about-lottie-top {
+  margin-bottom: 2.5rem;
+}
+
+.about-lottie-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 380px;
+}
+
+.about-lottie-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -18px;
+  background: radial-gradient(circle at center, rgba(34, 211, 165, 0.13), transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse-glow-green 5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow-green {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.about-lottie-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 520px;   
+}
+
+@keyframes float-about {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Make the content feel tighter */
+.about-content {
+  max-width: 780px;
+  margin: 0 auto;
 }
