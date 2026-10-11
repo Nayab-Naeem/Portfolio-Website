@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Stat counters — runs after full page load (images etc.)
 window.addEventListener('load', () => {
-  [{id:'s1', val:6}, {id:'s2', val:50}, {id:'s3', val:400}].forEach(({id, val}) => {
+  [{id:'s1', val:8}, {id:'s2', val:50}, {id:'s3', val:400}].forEach(({id, val}) => {
     let cur = 0;
     const step = val / 50;
     const el = document.getElementById(id);
