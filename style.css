@@ -360,74 +360,67 @@
 }
 
 /* ===== SKILLS ===== */
-.skills-content {
+.skill-category-card {
   background: #0d0d14;
   border: 0.5px solid #2a2a3a;
   border-radius: 12px;
-  padding: 36px;
+  padding: 28px 24px;
+  height: 100%;
+  transition: border-color 0.25s, transform 0.2s, box-shadow 0.25s;
 }
 
-.skills-content h3 {
-  color: #a855f7;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.skill-category-card:hover {
+  border-color: #a855f7;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(168, 85, 247, 0.12);
 }
 
-.skill-item {
-  margin-bottom: 22px;
-}
-
-.skill-info {
+.skill-cat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  justify-content: center;
+  color: #a855f7;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
 }
 
-.skill-info span:first-child {
-  color: #c4b5fd;
-  font-size: 13px;
+.skill-category-card h3 {
+  color: #f1f0ff;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 18px 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
   letter-spacing: 0.5px;
 }
 
-.skill-sub {
-  color: #4b5563;
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: rgba(168, 85, 247, 0.1);
+  color: #c4b5fd;
+  border: 1px solid rgba(168, 85, 247, 0.25);
   font-size: 11px;
-  margin-left: 6px;
-  font-style: normal;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
-.skill-pct {
+.skill-tag:hover {
+  background: rgba(34, 211, 165, 0.1);
+  border-color: rgba(34, 211, 165, 0.35);
   color: #22d3a5;
-  font-size: 12px;
-  font-weight: 500;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.skill-bar {
-  height: 4px;
-  background: #1a1a2e;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.skill-progress {
-  height: 100%;
-  border-radius: 2px;
-  width: 0%;
-  transition: width 1.4s cubic-bezier(0.4,0,0.2,1);
-}
-.soft-skills-intro {
-  font-size: 12px;
-  color: #4b5563;
-  line-height: 1.8;
-  border-left: 2px solid #a855f7;
-  padding-left: 12px;
-  margin-bottom: 28px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* ===== PROJECTS ===== */
